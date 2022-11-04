@@ -1,6 +1,6 @@
 # Cucumber Test Saque BDD Java
 # Descrição
-  Este projeto e uma base para um futuro cenário de teste java que abrange dois testes relacionados a uma operação bancária (saque bancário) usando cucumber como ferramenta de teste. Sendo a 1 branch (esta aqui, a qual se encontra este readme) a configuração do ambiente testes cucumber.
+  Este projeto é uma base para um futuro cenário de teste java que abrange dois testes relacionados a uma operação bancária (saque bancário) usando cucumber como ferramenta de teste. Sendo a 1 branch (esta aqui, a qual se encontra este readme) a configuração do ambiente testes cucumber.
 # Mecânicas
   Uso do cucumber para a aplicação do BDD (Behavior Driven Development) em java. O arquivo "Conta_BDD.feature" conta com os cenários e o que é esperado deles. Já o arquivo "conta.java" conta com os cenários em si sendo testados usando o cucumber. Codigo comentado para melhor compreensão.
 # Como usar
