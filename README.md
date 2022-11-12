@@ -20,7 +20,7 @@
 </div>
 
 ### Execução do Runner.java
-Vale lembrar que dependendo do do tipo do cliente declarado no "conta.java" na variavel booleana "cliEspecial" caso a variavel seja TRUE sera cliente especial e FALSO sera comum o resultado do "runner.java" sera diferente dependendo disto.
+Vale lembrar que dependendo do do tipo do cliente declarado no "conta.java" na variavel booleana "cliEspecial" caso a variavel seja TRUE sera cliente especial e FALSO sera comum o resultado do "runner.java" sera diferente dependendo disto. Caso o "dryRun" no runner.java seja alterada para TRUE ele nao retornara erro.
 ### cliEspecial = true (cliente especial)
 <div align="center">
 <img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040763507722961046/image.png">
