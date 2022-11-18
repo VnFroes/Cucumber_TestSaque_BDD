@@ -55,7 +55,7 @@ public class conta {
 		/**If para testar se caso o valor do saldo seja o valor estabelecido no Given do primeiro cenario da "Conta_BDD.feature"
 		 * E o cliente do tipo especia. Senão o cucumber retornara como erro*/
 		
-		if(this.cliEspecial == true && contaExtrato instanceof Integer) {
+		if(this.cliEspecial == true) {
 		}else {throw new io.cucumber.java.PendingException();}
 	}
 	
@@ -75,7 +75,7 @@ public class conta {
 		/**If para testar se caso o valor do saque seja o valor estabelecido no primeiro cenario da "Conta_BDD.feature"
 		 * E o cliente do tipo especial. Senão o cucumber retornara erro*/
 		
-		if (saque instanceof Integer && this.cliEspecial == true) {
+		if (this.cliEspecial == true) {
 		} else {throw new io.cucumber.java.PendingException();}
 	}
 	
@@ -94,7 +94,7 @@ public class conta {
 		 * Senão o cucumber devera retornar erro
 		 */
 		
-		if (saldo instanceof Integer && this.cliEspecial == true) {
+		if (this.cliEspecial == true) {
 			saldo = this.contaExtrato - (this.saque);
 		} else {throw new io.cucumber.java.PendingException();}
 	}
@@ -121,7 +121,7 @@ public class conta {
 		/**If para testar se caso o saldo seja o valor estabelecido no segundo cenario da "Conta_BDD.feature"
 		 * E o cliente do tipo comum. Senão o cucumber retornara como erro*/
 		
-		if(this.cliEspecial == false && contaExtrato instanceof Integer) {
+		if(this.cliEspecial == false) {
 		}else {throw new io.cucumber.java.PendingException();}
 	}
 	
