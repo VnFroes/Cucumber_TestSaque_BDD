@@ -33,7 +33,7 @@ Vale lembrar que dependendo do do tipo do cliente declarado no "conta.java" na v
 
 
 ### Como usar
-  Baixe o projeto e abra-o em uma IDE (recomendado Eclipse) porem antes sera necessário baixar algumas dependências (java 8, cucumber plugin), após o projeto       aberto e as dependências instaladas basta executar o "Runner.java". 
+  Baixe o projeto (crie uma pasta "disciplinaqualidade" e coloque os arquivos dentro para evitar problemas com o nome do projeto na hora de executar) e abra-o em uma IDE (recomendado Eclipse) porem antes sera necessário baixar algumas dependências (java 8, cucumber plugin), após o projeto       aberto e as dependências instaladas basta executar o "Runner.java". 
 ### Ajuda
   Basta entrar em contato direto com o criador deste repositorio no github.
 ### Contribuidores (quem mantem o projeto)
