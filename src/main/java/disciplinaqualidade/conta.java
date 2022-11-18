@@ -6,11 +6,11 @@ import io.cucumber.java.en.When;
 
 public class conta {
 	/**
-	 * Cenario: 1 (saque cliente especial)
+	 * Cenário: 1 (saque cliente especial)
 	 * 
 	 * Cliente da categoria "especial" deseja realizar um saque = 100 do saldo da conta = -200
 	 * 
-	 * Este tem a disposição a realização de um saque (com previlegios)
+	 * Este tem a disposição a realização de um saque (com previlégios)
 	 * 
 	 * Mesmo se o cliente possuir saldo negativo este ainda pode sacar dinheiro (Saque = 100 dá conta de saldo = -200, espera se que fica com saldo de -300)
 	 *  
@@ -19,15 +19,18 @@ public class conta {
 	/**
 	*Variaveis inteiros para armazenar Saque e Saldo e extrato da conta
 	*/
+	
 	int saque;
 	int saldo;
 	int contaExtrato;
+	
 	/**
 	 * Booleano (para saber se o cliente é comum ou especial) 
 	 */
+	
 	boolean cliEspecial = true;
 	
-	/**If para determianr o tipo de cliente para os cenarios 1 e 2 */
+	/**If para determinar o tipo de cliente para os cenarios 1 e 2 */
 	
 	public void tipoCliente() {
 
@@ -48,12 +51,11 @@ public class conta {
 	public void um_cliente_especial_com_saldo_atual_de_reais(Integer contaExtrato) {
 	    // Write code here that turns the phrase above into concrete actions
 		
-		/**Variavel saldo vai receber o valor do parametro "contaExtrato", assumindo o valor determinado pelo Given do "Conta_BDD.feature" Cenario 1 */
+		/**Variavel "saldo" vai receber o valor do parametro "contaExtrato", assumindo o valor determinado no "Conta_BDD.feature" Cenário 1 */
 		
 		this.saldo = contaExtrato;
 		
-		/**If para testar se caso o valor do saldo seja o valor estabelecido no Given do primeiro cenario da "Conta_BDD.feature"
-		 * E o cliente do tipo especia. Senão o cucumber retornara como erro*/
+		/**If para testar se o cliente é do tipo especial. Senão o cucumber retornará como erro*/
 		
 		if(this.cliEspecial == true) {
 		}else {throw new io.cucumber.java.PendingException();}
@@ -68,12 +70,11 @@ public class conta {
 	public void for_solicitado_um_saque_no_valor_de_reais(Integer saque) {
 	    // Write code here that turns the phrase above into concrete actions
 		
-		/**Variavel saque vai receber o valor do parametro "saque", assumindo o valor estabelecido no "Conta_BDD.feature" Cenario 1 */
+		/**Variavel "saque" vai receber o valor do parametro "saque", assumindo o valor estabelecido no "Conta_BDD.feature" Cenário 1 */
 		
 		this.saque =saque;
 		
-		/**If para testar se caso o valor do saque seja o valor estabelecido no primeiro cenario da "Conta_BDD.feature"
-		 * E o cliente do tipo especial. Senão o cucumber retornara erro*/
+		/**If para testar se o cliente é do tipo especial. Senão o cucumber retornará erro*/
 		
 		if (this.cliEspecial == true) {
 		} else {throw new io.cucumber.java.PendingException();}
@@ -89,9 +90,8 @@ public class conta {
 	public void deve_efetuar_o_saque_e_atualizar_o_saldo_da_conta_para_reias(Integer saldo) {
 	    // Write code here that turns the phrase above into concrete actions
 		
-		/**If para testar se caso o valor do saldo seja o valor estabelecido no "Conta_BDD.feature" 
-		 * e se o cliete for do tipo especial. Realizar a atualização do extrato do cliente especial*
-		 * Senão o cucumber devera retornar erro
+		/**If para se o cliente é do tipo especial, Realizar a atualização do extrato do cliente especial*
+		 * Senão o cucumber deverá retornar erro
 		 */
 		
 		if (this.cliEspecial == true) {
@@ -100,13 +100,13 @@ public class conta {
 	}
 	
 	/**
-	 * Cenario: 2 (saque cliente comum)
+	 * Cenário: 2 (saque cliente comum)
 	 * 
-	 * Cliente da categoria "comum" deseja realizar um saque do saldo da conta
+	 * Cliente da categoria "comum" deseja realizar um saque (saque= 200 do saldo da conta = -300, espera se que retorne "saldo insulficiente")
 	 * 
-	 * Este tem a disposição a realização de um saque (sem privilegios)
+	 * Este tem a disposição a realização de um saque (sem privilégios)
 	 * 
-	 * Caso este cliente possua saldo negativo não poderar realizar um saque (saldo insulficiente)
+	 * Caso este cliente deseje realizar um saque com um valor maior que o saldo, este cliente não podera realizar o saque (saldo insulficiente)
 	 *  
 	 */
 
@@ -114,12 +114,11 @@ public class conta {
 	public void um_cliente_comum_com_saldo_atual_de_reais(Integer contaExtrato) {
 	    // Write code here that turns the phrase above into concrete actions
 
-		/**Variavel saldo vai receber o valor do parametro "contaExtrato", assumindo o valor determinado no "Conta_BDD.feature" Cenario 2 */
+		/**Variavel "saldo" vai receber o valor do parametro "contaExtrato", assumindo o valor determinado no "Conta_BDD.feature" Cenário 2 */
 		
 		this.saldo = contaExtrato;
 		
-		/**If para testar se caso o saldo seja o valor estabelecido no segundo cenario da "Conta_BDD.feature"
-		 * E o cliente do tipo comum. Senão o cucumber retornara como erro*/
+		/**If para testar se o cliente é do tipo comum. Senão o cucumber retornará como erro*/
 		
 		if(this.cliEspecial == false) {
 		}else {throw new io.cucumber.java.PendingException();}
@@ -139,7 +138,7 @@ public class conta {
 		this.saque = saque;
 		
 		/**If para testar se caso o valor do saque seja o valor estabelecido no segundo cenario da "Conta_BDD.feature"
-		 *Senão o cucumber retornara como erro*/
+		 *Senão o cucumber retornará como erro*/
 		
 		if (saque instanceof Integer) {
 		} else {throw new io.cucumber.java.PendingException();}
@@ -155,13 +154,13 @@ public class conta {
 		
 		/**If para testar se caso o valor saque for menor do valor do extrato e se o estrato é maior que 0 e o cliente do tipo comum.
 		 * Já o Else if retornará o esperado para um cliente comum com um saque maior que o extrato ("Saldo insulficiente")
-		 * e o else, o cucumber retornara erro 
+		 * e o else, o cucumber retornará erro 
 		 */
 		
 		if (this.cliEspecial == false && this.saque < this.contaExtrato && this.contaExtrato > 0) {
 
 		} else if (this.saque > this.contaExtrato) {
-			System.out.print("Saldo insuficiente");
+			System.out.println("Saldo insuficiente");
 		} else
 			throw new io.cucumber.java.PendingException();
 	}
