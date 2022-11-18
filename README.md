@@ -11,7 +11,7 @@
 
 ### Os cenários testes (com codigo comentado)
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040764735987122279/image.png">
+<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1043233044368207942/image.png">
 </div>
   
   ### Código Runner.java
