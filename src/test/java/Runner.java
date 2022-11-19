@@ -1,17 +1,16 @@
 import org.junit.runner.RunWith;
 
-import io.cucumber.core.snippets.SnippetType;
-import io.cucumber.junit.Cucumber;
-
-import io.cucumber.junit.CucumberOptions;
-
+import cucumber.api.CucumberOptions;
+import cucumber.api.SnippetType;
+import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
 	plugin = {"pretty"},
 	monochrome = true,
-	snippets = io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE,
-	dryRun = false
+	snippets = SnippetType.CAMELCASE,
+	dryRun = false,
+	strict = true
 		)
 public class Runner {
 	
