@@ -23,12 +23,12 @@
 Vale lembrar que dependendo do do tipo do cliente declarado no "conta.java" na variavel booleana "cliEspecial" (caso a variavel seja TRUE sera cliente especial e FALSO sera cliente comum) o resultado do "runner.java" sera diferente dependendo disto. Alem disto, caso o "dryRun" no runner.java seja alterada para TRUE ele não retornara erro.
 ### cliEspecial = true (cliente especial)
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040763507722961046/image.png">
+<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1043330086067241030/image.png?ex=6a15999c&is=6a14481c&hm=3b62ef42f573091c185fb4dec38c2d2534e5a562b1b4b5df1f87880720898ae2">
 </div>
 
 ### cliEspecial = false (cliente comum)
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040773113031426128/image.png">
+<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1043330476561154078/image.png?ex=6a1599f9&is=6a144879&hm=6d1ac846d3f0efa348d154c04869ac99cd21e5f7a0853014d377d02e70e53ddc">
 </div>
 
 
