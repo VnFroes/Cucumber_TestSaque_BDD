@@ -6,17 +6,17 @@
   
   ### O que é esperado dos cenários
   <div align="center">
-<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040764281400070174/image.png">
+<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040756101093789808/Junit1.png?ex=6a161fa6&is=6a14ce26&hm=8b679946e64f969f75c6b3fcad75fc678cf4cd0c0e772e0243b04cead5c35e17">
 </div>
 
 ### Os cenários testes (com código comentado)
 <div align="center">
-<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1043233044368207942/image.png">
+<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040764281400070174/image.png?ex=6a162745&is=6a14d5c5&hm=19d3e055be615f84a7ea8132981b73ad86f40f88085c8f7dd9b03b14575ef061">
 </div>
   
   ### Código Runner.java
   <div align="center">
-<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040764428913737818/image.png">
+<img src="https://cdn.discordapp.com/attachments/1040755969589788675/1040763507722961046/image.png?ex=6a16268c&is=6a14d50c&hm=ee8cf62bef92f3f9d59b2c40502df0c39b9780c3001b31b08ce0f5c80e0ee8f1">
 </div>
 
 ### Execução do Runner.java
